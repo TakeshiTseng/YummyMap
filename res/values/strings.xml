@@ -6,5 +6,9 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+    <string name="title_around">周邊</string>
+    <string name="title_map">地圖</string>
+    <string name="title_favorite">我的最愛</string>
+    <string name="title_achievement">成就</string>
 
 </resources>
