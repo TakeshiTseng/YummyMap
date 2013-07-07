@@ -14,7 +14,7 @@ public class AchievementFragment extends Fragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.favorite_fragment,
+		View rootView = inflater.inflate(R.layout.achievement_fragment,
 				container, false);
 		
 		// TODO 初始化
