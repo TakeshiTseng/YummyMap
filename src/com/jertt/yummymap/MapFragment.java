@@ -16,7 +16,7 @@ public class MapFragment extends Fragment{
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.map_fragment,
 				container, false);
-		
+		// push test
 		// TODO 初始化
 		// TODO 用 getArguments().getxxx 來取得傳過來的參數
 		
