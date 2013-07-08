@@ -15,11 +15,10 @@ public class FavoriteFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.favorite_fragment,
-				container, false);
-		
+				container, false);		
 		// TODO 初始化
 		// TODO 用 getArguments().getxxx 來取得傳過來的參數
-		System.out.println("try push");
+		setContentView(R.layout.favorite_fragment);
 		return rootView;
 	}
 }
