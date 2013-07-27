@@ -14,7 +14,7 @@ import org.json.*;
 public class YMapAPI {
 //	static final String HOST = "http://localhost:8080";
 	static final String HOST = "http://ym.takeshi.tw:8080";
-	public String search(double longitude, double latitude, int radius) {
+	public static String search(double longitude, double latitude, int radius) {
 		String res = null;
 		try {
 			HttpClient client = new DefaultHttpClient();
@@ -34,7 +34,7 @@ public class YMapAPI {
 		return res;
 	}
 
-	public String createPlace(String name, double longitude, double latitude,
+	public static String createPlace(String name, double longitude, double latitude,
 			String description, int type, String photoid, String authorId,
 			int star) {
 
@@ -66,7 +66,7 @@ public class YMapAPI {
 
 	}
 
-	public String addDescription(String placeId, String description,
+	public static String addDescription(String placeId, String description,
 			String photoId, String authorId, int star) {
 		String res = null;
 		try {
@@ -92,7 +92,7 @@ public class YMapAPI {
 		return res;
 	}
 
-	public String uploadPhoto(File photo) {
+	public static String uploadPhoto(File photo) {
 		String res = null;
 		try {
 			HttpClient client = new DefaultHttpClient();
@@ -116,7 +116,7 @@ public class YMapAPI {
 		return res;
 	}
 	
-	public byte[] downloadPhoto(String pid){
+	public static byte[] downloadPhoto(String pid){
 		byte[] res = null;
 		HttpClient client = new DefaultHttpClient();
 		HttpGet get = new HttpGet(HOST + "/get_photo?pid="+pid);
