@@ -37,7 +37,7 @@ public class FavoriteFragment extends Fragment {
 
 	ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
 	private SimpleAdapter adapter;
-
+    YMapAPI ymap = new YMapAPI();
 	public FavoriteFragment() {
 		// TODO Auto-generated constructor stub
 	}
@@ -57,9 +57,8 @@ public class FavoriteFragment extends Fragment {
 			list.add(item);
 		}
 		adapter = new SimpleAdapter(rootView.getContext(), list,
-				R.layout.favorite_listview, new String[] { "food", "place",
-						"rating" }, new int[] { R.id.textView1, R.id.textView2,
-						R.id.textView3 });
+				R.layout.favorite_listview, new String[] { "food" },
+				new int[] { R.id.favoritetext1});
 
 	    favorite_listview.setAdapter(adapter);
 		favorite_listview.setTextFilterEnabled(true); 

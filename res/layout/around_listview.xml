@@ -9,7 +9,28 @@
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/aroundtext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/aroundtext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.17"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/aroundtext3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.95"
@@ -17,11 +38,13 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/aroundtext4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.95"
             android:text="Large Text"
             android:textAppearance="?android:attr/textAppearanceLarge" />
+
     </LinearLayout>
 
     <ImageView
@@ -30,13 +53,5 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.16"
         android:src="@android:drawable/ic_menu_report_image" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.64"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>
