@@ -19,8 +19,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.SimpleAdapter;
 
 public class AroundFragment extends Fragment implements LocationListener {
+	
+	
 	public AroundFragment() {
 
 	}
@@ -98,8 +103,12 @@ public class AroundFragment extends Fragment implements LocationListener {
 		@Override
 		protected void onPostExecute(List<String> result) {
 			super.onPostExecute(result);
+			
+			
 
 		}
 
 	}
+	
+	
 }
