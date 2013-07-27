@@ -83,7 +83,7 @@ public class MainActivity extends FragmentActivity implements
 				fragment = new AroundFragment();
 				break;
 			case 1:
-				fragment = new MapFragment();
+				fragment = new MapsFragment();
 				break;
 			case 2:
 				fragment = new FavoriteFragment();

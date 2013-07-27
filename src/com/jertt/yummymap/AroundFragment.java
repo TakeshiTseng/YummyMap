@@ -22,6 +22,8 @@ public class AroundFragment extends Fragment{
 		// TODO 初始化
 		// TODO 用 getArguments().getxxx 來取得傳過來的參數
 		
+		
+
 		return rootView;
 	}
 }
