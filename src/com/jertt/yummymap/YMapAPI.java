@@ -122,9 +122,19 @@ public class YMapAPI {
 		HttpGet get = new HttpGet(HOST + "/get_photo?pid="+pid);
 		try {
 			HttpResponse response = client.execute(get);
+			int len = (int) response.getEntity().getContentLength();
+			System.out.println(len);
+			
+			byte[] responseBody = new byte[len];
+			
+			InputStream is = response.getEntity().getContent();
+			is.read(responseBody, 0, len);
+			
+			res = responseBody;
+			
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
 		return res;
