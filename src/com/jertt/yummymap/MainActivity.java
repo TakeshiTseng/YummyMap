@@ -1,5 +1,7 @@
 package com.jertt.yummymap;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.app.ActionBar.Tab;
@@ -29,7 +31,7 @@ public class MainActivity extends FragmentActivity implements
 
 		mSectionsPagerAdapter = new SectionsPagerAdapter(
 				getSupportFragmentManager());
-
+		
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 		mViewPager
@@ -55,11 +57,15 @@ public class MainActivity extends FragmentActivity implements
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction fragmentTransaction) {
 		mViewPager.setCurrentItem(tab.getPosition());
+		
+		
+		
 	}
 
 	@Override
 	public void onTabUnselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
+		
 	}
 
 	@Override
@@ -120,5 +126,5 @@ public class MainActivity extends FragmentActivity implements
 			return null;
 		}
 	}
-
+	
 }
